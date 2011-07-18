@@ -1,0 +1,84 @@
+.multi-select{
+    border-bottom: 1px solid #BFBFBF;
+    border-left: 1px solid #BFBFBF;
+    border-right: 1px solid #BFBFBF;
+}
+.multi-select div.ms-odd{
+    background-color: #f3f3f3;
+}
+.multi-select div.ms-even{
+    background-color: #fefefe;
+}
+.multi-select div.ms-option{
+    padding: 2px;
+}
+.multi-select div.ms-option:hover{
+    background-color: #aaa;
+}
+.multi-select div.ms-pages li{
+    display: inline-block;
+}
+.multi-select div.ms-pages li.ms-nav-separator,
+.multi-select div.ms-pages li.ms-page-separator{
+    display: none;
+}
+.multi-select div.ms-pages li.ms-first,
+.multi-select div.ms-pages li.ms-prev,
+.multi-select div.ms-pages li.ms-page,
+.multi-select div.ms-pages li.ms-next,
+.multi-select div.ms-pages li.ms-last,
+.multi-select div.ms-pages li.ms-current{
+    color: #8a8a8a;
+    padding: 2px 4px;
+    background: #ececec;
+    border: 1px solid #b7b7b7;
+    margin-right: 3px;
+    margin-top: 5px;
+}
+.multi-select div.ms-pages li.ms-current{
+    color: #fff;
+    background: #686868;
+    border: 1px solid #535353;
+}
+.multi-select div.ms-pages li.ms-page:hover,
+.multi-select div.ms-pages li.ms-first:hover,
+.multi-select div.ms-pages li.ms-prev:hover,
+.multi-select div.ms-pages li.ms-next:hover,
+.multi-select div.ms-pages li.ms-last:hover{
+    cursor: pointer;
+    padding: 2px 4px;
+    background: #b7b7b7;
+    border: 1px solid #9f9f9f;
+    margin-right: 3px;
+    color: #686868;
+}
+.multi-select div.ms-selected label span{
+    font-weight: bold;
+}
+.multi-select div.ms-option label{
+    display: block;
+}
+.drop-down,
+.multi-select .ms-option{
+    font-family: sans-serif;
+    font-size: 13px;
+}
+.drop-down{
+    background: #EFEFEF url('line_border.png') repeat-y right top;
+    border: 1px solid #BFBFBF;
+    cursor: pointer;
+}
+.drop-down div{
+    background: url('arrow.png') no-repeat right center;
+    margin: 4px;
+}
+.drop-down div.folded{
+    background-image: url('arrow-dn.png');
+}
+.drop-down-wrapper{
+    position: relative;
+}
+.drop-down+div{
+    position: absolute;
+    z-index: 999;
+}
