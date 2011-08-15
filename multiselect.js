@@ -168,6 +168,7 @@
 		else return $.error(mth + ' is not a valid multiSelect method.');  //Needs return, to keep within strict JavaScript standards.
 	}
 	$.fn.dropDown=function(a,b){  //All of this dropDown source is optimized for minification.
+		//TODO This needs to use event delegation instead of the current method.  I will change it as soon as I get a chance.
 		var c=false,
 			d=this.hide(),
 			e=true,
